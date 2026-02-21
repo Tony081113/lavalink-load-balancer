@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "lava-speed"
+version = "0.1.0"
+description = "High-performance async client utilities for Lavalink ecosystem"
+authors = ["tonyl <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "lava_speed", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.10"
+ujson = "^5.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
+pytest-asyncio = "^0.24"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
